@@ -1,6 +1,7 @@
 import { useState } from "react"
-import './index.css'
 import { useNavigate } from "react-router-dom";
+import { FindButton, HomeBody } from '../../components/styles'
+//import Page from '../../components/styles'
 
 function Home() {
     const [name, setName] = useState();
@@ -12,14 +13,14 @@ function Home() {
     }
 
     return (
-        <div className="homeBody">
+        <HomeBody>
             <h1>Find Freelas</h1>
             {/* <span>{name}</span> */}
             <p>O seu portal para encontrar profissionais</p>
-            <button type="button" onClick={handleName} className="findButton">
+            <FindButton type="button" onClick={handleName} className="findButton">
                 Encontrar Profissionais
-            </button>
-        </div>
+            </FindButton>
+        </HomeBody>
     )
 }
 

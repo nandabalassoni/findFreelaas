@@ -1,25 +1,25 @@
-import { useState } from "react"
-//import './index.css'
+//import { useState } from "react"
 import { useNavigate } from "react-router-dom";
+import { FindButton, HomeBody } from '../../components/styles'
 
 function Freelas() {
-    const [name, setName] = useState();
+    //const [name, setName] = useState();
     const navigate = useNavigate();
 
     function handleName() {
         //setName("Maria");
-        navigate("/freelas"); // Adicione esta linha
+        navigate("/");
     }
 
     return (
-        <div className="homeBody">
+        <HomeBody>
             <h1>Find Freelas</h1>
             {/* <span>{name}</span> */}
             <p>TESTE PARA PÁGINA DO PROFISSIONAL</p>
-            <button type="button" onClick={handleName} className="findButton">
+            <FindButton onClick={handleName} className="findButton">
                 Encontrar Profissionais
-            </button>
-        </div>
+            </FindButton>
+        </HomeBody>
     )
 }
 

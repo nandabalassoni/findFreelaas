@@ -9,7 +9,7 @@ function Freelas() {
 
   function handleName() {
     //setName("Maria");
-    navigate("/freelas");
+    navigate("/");
   }
 
   return (

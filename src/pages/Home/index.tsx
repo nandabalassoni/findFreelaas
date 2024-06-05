@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import { FindButton, HomeBody } from '../../components/styles'
-//import Page from '../../components/styles'
 
 function Home() {
     const [name, setName] = useState();

@@ -1,7 +1,9 @@
-//import { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
-import { FindButton, HomeBody } from "../../components/styles";
+import perfilMaria from '../../assets/perfilMaria.jpeg'
+import perfilVinicius from '../../assets/perfilVinicius.jpeg'
+import perfilBruno from '../../assets/perfilBruno.jpeg'
+import { Card, FindButton, HomeBody, Title } from "../../components/styles";
 
 function Freelas() {
   //const [name, setName] = useState();
@@ -15,28 +17,78 @@ function Freelas() {
   return (
     <div className="container">
       <HomeBody>
-        <h1 className="text-center">Find Freelas</h1>
+        <Title>Find Freelas</Title>
         {/* <span>{name}</span> */}
-        <p>ENCONTRAR PROFISSIONAIS</p>
+        <p>O seu portal para encontrar profissionais</p>
         <FindButton onClick={handleName} className="findButton">
-          Encontrar Profissionais
+          Voltar para Home
         </FindButton>
 
-        <div className="card" style={{ width: "18rem" }}>
-          <img
-            className="card-img-top"
-            src=".../100px180/"
-            alt="Imagem de capa do card"
-          />
-          <div className="card-body">
-            <h5 className="card-title">Título do card</h5>
-            <p className="card-text">
-              Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card.
-            </p>
-            <a href="#" className="btn btn-primary">
-              Visitar
-            </a>
+        <div className="row" style={{marginLeft: "30px"}}>
+          <div className="col-sm-12 col-md-6 col-lg-4">
+            <Card>
+              <div className="card" style={{ width: "18rem" }}>
+                <img
+                  className="card-img-top"
+                  //src=".../100px180/"
+                  src= { perfilMaria }
+                  alt="Imagem de capa do card"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Maria Fernanda Balassoni</h5>
+                  <p className="card-text">
+                    Desenvolvedora Android Kotlin
+                  </p>
+                  <a href="#" className="btn btn-primary">
+                    Saiba mais sobre o profissional
+                  </a>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          <div className="col-sm-12 col-md-6 col-lg-4">
+            <Card>
+              <div className="card" style={{ width: "18rem" }}>
+                <img
+                  className="card-img-top"
+                  // src=".../100px180/"
+                  src={perfilVinicius}
+                  alt="Imagem de capa do card"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Vinícius Luiz Taparosky</h5>
+                  <p className="card-text">
+                    Desenvolvedor Kotlin e Swift
+                  </p>
+                  <a href="#" className="btn btn-primary">
+                  Saiba mais sobre o profissional
+                  </a>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          <div className="col-sm-12 col-md-6 col-lg-4" style={{marginBottom: "20px"}}>
+            <Card>
+              <div className="card" style={{ width: "18rem" }}>
+                <img
+                  className="card-img-top"
+                  //src=".../100px180/"
+                  src={perfilBruno}
+                  alt="Imagem de capa do card"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Bruno Santos Silva</h5>
+                  <p className="card-text">
+                    Desenvolvedor Swift
+                  </p>
+                  <a href="#" className="btn btn-primary">
+                  Saiba mais sobre o profissional
+                  </a>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </HomeBody>

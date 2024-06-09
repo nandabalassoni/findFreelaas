@@ -38,6 +38,7 @@ function Freelas() {
                   <h5 className="card-title">Maria Fernanda Balassoni</h5>
                   <p className="card-text">
                     Desenvolvedora Android Kotlin
+                    Principais Projetos: App MyCloudApp
                   </p>
                   <a href="#" className="btn btn-primary">
                     Saiba mais sobre o profissional
@@ -60,6 +61,7 @@ function Freelas() {
                   <h5 className="card-title">Vinícius Luiz Taparosky</h5>
                   <p className="card-text">
                     Desenvolvedor Kotlin e Swift
+                    Principais Projetos: App Decathlon
                   </p>
                   <a href="#" className="btn btn-primary">
                   Saiba mais sobre o profissional
@@ -82,6 +84,7 @@ function Freelas() {
                   <h5 className="card-title">Bruno Santos Silva</h5>
                   <p className="card-text">
                     Desenvolvedor Swift
+                    Principais Projetos: App ComprasUSA
                   </p>
                   <a href="#" className="btn btn-primary">
                   Saiba mais sobre o profissional

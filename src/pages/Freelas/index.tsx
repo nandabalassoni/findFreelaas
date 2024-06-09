@@ -40,7 +40,7 @@ function Freelas() {
                     Desenvolvedora Android Kotlin
                     Principais Projetos: App MyCloudApp
                   </p>
-                  <a href="#" className="btn btn-primary">
+                  <a href="/maria" className="btn btn-primary">
                     Saiba mais sobre o profissional
                   </a>
                 </div>
@@ -84,6 +84,7 @@ function Freelas() {
                   <h5 className="card-title">Bruno Santos Silva</h5>
                   <p className="card-text">
                     Desenvolvedor Swift
+                    <br />
                     Principais Projetos: App ComprasUSA
                   </p>
                   <a href="#" className="btn btn-primary">

@@ -5,9 +5,13 @@ const HomeBody = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   color: #836FFF;
-  background-color: #FFFAFA;
+  height: 100vh;
+  background-color: #E6E6FA;
+
+  @media (max-width: 768px) {
+    height: 174vh;
+  }
 `;
 
 const FindButton = styled.button`
@@ -25,4 +29,14 @@ const FindButton = styled.button`
   }
 `;
 
-export { HomeBody, FindButton };
+const Title = styled.h1`
+  margin-top: 20px;
+`;
+
+const Card = styled.div `
+  margin-top: 50px;
+  display: flex;
+  margin-left: 20px;
+`;
+
+export { HomeBody, FindButton, Card, Title };
